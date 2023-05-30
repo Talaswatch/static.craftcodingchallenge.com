@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/marafff/static.craftcodingchallenge.com/
-    - /bin/cp -R index.html $DEPLOYPATH
