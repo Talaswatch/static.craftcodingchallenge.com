@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Generated on Tue, 02 Jan 2018 22:29:25 +0300 --><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>aaaa</title>
+        <link>dddd.com</link>
+        <description>فيديوهات الموقع</description> <language>ar</language> 
+{%set curll='https://www.almontasaf.net/rate.html'%}
+{% set crawler = craft.scraper.using('simplehtmldom').get(curll) %}
+	<item>
+	  <title>{% for node in crawler.find('h1') %}{% autoescape false %}{{ node.innertext()|retconRemoveEmpty|striptags|trim|raw }}{% endautoescape %}{% endfor %}</title>
+	  <description>
+<![CDATA[ اسعار العملات في اليمن]]>
+</description>
+<content>
+<![CDATA[ {% for node in crawler.find('table') %}<table>{{ node.innertext()	|raw }}</table>{% endfor %} <>]]>
+</content>
+<category>whatsapp</category>	
+	</item>
+    </channel>
+</rss>
