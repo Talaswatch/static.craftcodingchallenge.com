@@ -1,0 +1,22 @@
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Content-Security-Policy: upgrade-insecure-requests
+  Strict-Transport-Security: max-age=5184000
+  Cache-Control: public, s-maxage=31536000, max-age=0
+  X-Xss-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  /assets/*
+  Cache-Control: max-age=5184000
+  /uploads/*
+  Cache-Control: max-age=5184000
+  
+  /laz.js*
+  Cache-Control: max-age=5184000
+  
+  /laz.js
+  Cache-Control: max-age=5184000
+  
+  /css/*
+  https://frosty-einstein-c4f96d.netlify.app/*
+  X-Robots-Tag: noindex
